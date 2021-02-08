@@ -1,0 +1,28 @@
+name: CarrotRTP
+version: 1.2.1
+description: A plugin for randomly teleporting within a world
+author: TheRareCarrot
+main: carrot.rtp.CarrotRTP
+prefix: CarrotRTP
+
+commands:
+  biomes:
+    usage: /biomes
+    description: Lists all the avaliable biomes to RTP to
+    default: true
+  rtp:
+    usage: /rtp [biome (optional)]
+    description: teleports you to a random location, or to a random location in a specific biome
+    default: true
+  randomtp:
+    usage: /randomtp
+    description: same as /rtp
+    default: true
+  wild:
+    usage: /wild
+    description: same as /rtp
+    default: true
+  randomteleport:
+    usage: /randomteleport
+    description: same as /rtp
+    default: true

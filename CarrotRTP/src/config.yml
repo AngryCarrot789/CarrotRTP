@@ -1,0 +1,42 @@
+# the version of the plugin :)))
+version: '1.2.1'
+
+# a cool feature to summon lightning after a player RTPs
+summonLightning: true
+
+# the amount of time between RTP (in seconds)
+cooldownInterval: 10
+# whether RTPing to a specific biome is allowed
+allowBiomeRTP: true
+# the max number of times the search function can repeat to try and find a chunk
+# that is within a given biome. ignore if you dont care about biomes, but..
+# if it goes over this value, it returns the last random chunk found
+maxNumberOfBiomeSearches: 100
+
+# here is where you can add support for RTP in multiple worlds
+# you have to add the world's name to the list below, then
+# below the list do "that", with the world: minX, etc.
+# the minX and minZ MUST BE NEGATIVE, and maxX, maxZ MUST BE POSITIVE, it wont crash/break
+# but if min is positive, it is added onto the max, so you could rtp further than the maxX/maxZ
+# a list of worlds that are have /rtp (you must add the min/max sizes a bit below)
+allowedWorlds:
+  - 'world'
+  - 'w-mining'
+
+# the size of 'world'
+world:
+  minX: -1000
+  minZ: -1000
+  maxX: 1000
+  maxZ: 1000
+  minY: 55
+  maxY: 258
+
+# the size of 'w-mining'
+w-mining:
+  minX: -3500
+  minZ: -3500
+  maxX: 3500
+  maxZ: 3500
+  minY: 40
+  maxY: 80
